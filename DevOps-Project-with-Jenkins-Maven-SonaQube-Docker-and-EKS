@@ -4,8 +4,9 @@ Video Link -- https://youtu.be/e42hIYkvxoQ
 $ sudo apt update
 $ sudo apt upgrade
 $ sudo nano /etc/hostname
+## remove the Ip address and give the name as Jenkins-Master
 $ sudo init 6
-$ sudo apt install openjdk-17-jre
+$ sudo apt install openjdk-17-jre -y
 $ java -version
 
 ## Install Jenkins
@@ -25,6 +26,12 @@ $ sudo nano /etc/ssh/sshd_config
 $ sudo service sshd reload
 $ ssh-keygen OR $ ssh-keygen -t ed25519
 $ cd .ssh
+
+================Agent-comands in middle====================
+instaling docker
+$ sudo apt-get install docker.io
+$ sudo usermod -aG docker $USER
+
 
 ============================================================= Install and Configure the SonarQube =============================================================
 ## Update Package Repository and Upgrade Packages
